@@ -27,7 +27,7 @@ Follow these simple steps:
 Plugins Options
 ---------------
 
-The element offers the following options ;
+The plugin offers the following options currently ;
 
 <dl>
   <dt>UI Styles</dt>
@@ -81,7 +81,7 @@ See LICENSE.txt for further details.
 
 ## Credits
 
-We built Super UIkit plugin using popular open source projects.
+Super UIkit plugin uses these popular open source projects.
 
 * jQuery ([MIT License](http://opensource.org/licenses/MIT))
 * UIkit ([MIT License](https://github.com/uikit/uikit))
