@@ -19,7 +19,7 @@ Using the Plugin
 Follow these simple steps:
 
 * Download the package to your Desktop
-* Insatll the plugin using the Joomla Extensions installer.
+* Install the plugin using the Joomla Extensions installer.
 * Enbable the Plugin via the Joomla PLugins Manager  >>  System Plugins.
 * Choose from one of 3 UI styles in the plugins settings..
 
