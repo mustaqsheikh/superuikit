@@ -25,7 +25,7 @@
     <field name="suikit_theme" type="list" default="default" label="PLG_SYS_SUPERUIKIT_LABEL_DIV" description="PLG_SYS_SUPERUIKIT_LABEL_DES">
 		<option value="default">PLG_SYS_SUPERUIKIT_DEFAULT</option>
 		<option value="flat">PLG_SYS_SUPERUIKIT_FLAT</option>
-		<option value="flat">PLG_SYS_SSUPERUIKIT_GRADIENT</option>
+		<option value="gradient">PLG_SYS_SSUPERUIKIT_GRADIENT</option>
     </field>
 	</fieldset>
     </fields>
