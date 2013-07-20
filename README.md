@@ -1,7 +1,7 @@
 Super UIkit
 ==========
 
-Super UI Kit is a Joomla Plugin Extension developed by HerdBoy Web Design and Development to integrate the Super Aw.
+Super UI Kit is a Joomla Plugin Extension developed by HerdBoy Web Design and Development to integrate the Super Awesome UIkit into your website.
 
 This project is a work in progress. 
 
@@ -11,9 +11,9 @@ The current version if a 100% functional Joomla System plugin installable on Joo
 Useful to Anyone:
 ----------------
 
-Wanting to build Awesome Web Apps,
+Wanting to build Awesome Web Apps, see demos and docs here, http://www.getuikit.com/
 
-Using the PLugin
+Using the Plugin
 -----------------
 
 Follow these simple steps:
