@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+  <name>SUPERUIKIT</name>
+  <author>Mustaq Sheikh</author>
+  <creationDate>20th May 2012</creationDate>
+  <authorEmail>no-reply@herdboy.com</authorEmail>
+  <authorUrl>http://herdboy.com</authorUrl>
+  <version>3.0.0</version>
+  <copyright>Copyright (c) 2012 HerdBoy Web Design and Development. All rights reserved.</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <description>PLG_SYS_SUPERUIKIT_XML_DESC</description>
+  <files>
+    <filename plugin="superuikit">superuikit.php</filename>
+    <filename>index.html</filename>
+    <folder>assets</folder>
+    <folder>language</folder>    
+  </files>
+  <languages>
+	<language tag="en-GB">language/en-GB/en-GB.plg_system_superuikit.ini</language>
+	<language tag="en-GB">language/en-GB/en-GB.plg_system_superuikit.sys.ini</language>
+  </languages>
+  <config>
+    <fields name="params" >
+    <fieldset name="basic">
+    <field name="suikit_theme" type="list" default="default" label="PLG_SYS_SUPERUIKIT_LABEL_DIV" description="PLG_SYS_SUPERUIKIT_LABEL_DES">
+		<option value="default">PLG_SYS_SUPERUIKIT_DEFAULT</option>
+		<option value="flat">PLG_SYS_SUPERUIKIT_FLAT</option>
+		<option value="flat">PLG_SYS_SSUPERUIKIT_GRADIENT</option>
+    </field>
+	</fieldset>
+    </fields>
+  </config>
+</extension>
