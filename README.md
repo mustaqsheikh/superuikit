@@ -1,4 +1,4 @@
-superuikit
+Super UIkit
 ==========
 
 Super UI Kit is a Joomla Plugin Extension developed by HerdBoy Web Design and Development to integrate the Super Aw.
@@ -68,13 +68,6 @@ Contributing to Super UI Kit Plugin
 * Start a feature/bugfix branch
 * Commit and push until you are happy with your contribution
 * Initiate a [pull request](https://help.github.com/articles/using-pull-requests)
-
-Credits
--------
-
-* [Matthew Baylor](https://github.com/natselection) for making the original suggestion for the development of this element.
-* [Michael Maass](https://github.com/michaelmaass) for advice, testing and encouragement.
-* [Jan Schoenherr](https://github.com/janschoenherr) for advice and improvements.
 
 
 Copyright Joomla Plugin files
