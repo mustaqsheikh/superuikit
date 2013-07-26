@@ -488,8 +488,6 @@ body {
   font-weight: normal;
   line-height: 20px;
   color: #444444;
-  background-image: -webkit-radial-gradient(100% 100%, center, #ffffff, #ffffff);
-  background-image: radial-gradient(100% 100% at center, #ffffff, #ffffff);
 }
 /* Only phones */
 @media (max-width: 767px) {
@@ -1760,15 +1758,15 @@ ul.uk-nav-sub {
   outline: none;
   /* 2 */
 
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.06);
   text-shadow: 0 -1px 0 #ffffff;
 }
 /* Active */
 .uk-nav-side > li.uk-active > a {
-  background: #009dd8;
+  background: #00a8e6;
   color: #ffffff;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 /*
  * Sub-object: `uk-nav-header`
@@ -1809,13 +1807,13 @@ ul.uk-nav-sub {
 .uk-nav-dropdown > li > a:focus {
   /* 1 */
 
-  background: #009dd8;
+  background: #00a8e6;
   color: #ffffff;
   outline: none;
   /* 2 */
 
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 /*
  * Sub-object: `uk-nav-header`
@@ -1855,13 +1853,13 @@ ul.uk-nav-sub {
 .uk-nav-navbar > li > a:focus {
   /* 1 */
 
-  background: #009dd8;
+  background: #00a8e6;
   color: #ffffff;
   outline: none;
   /* 2 */
 
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 /*
  * Sub-object: `uk-nav-header`
@@ -1891,27 +1889,25 @@ ul.uk-nav-sub {
  */
 .uk-nav-search > li > a {
   color: #444444;
-  text-shadow: none;
 }
 /*
  * Active
  * 1. Remove default focus style
  */
 .uk-nav-search > li.uk-active > a {
-  background: #009dd8;
+  background: #00a8e6;
   color: #ffffff;
   outline: none;
   /* 2 */
 
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 /*
  * Sub-object: `uk-nav-header`
  */
 .uk-nav-search .uk-nav-header {
   color: #999999;
-  text-shadow: none;
 }
 /*
  * Sub-object: `uk-nav-divider`
@@ -2025,15 +2021,9 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 /* Component
  ========================================================================== */
 .uk-navbar {
-  background: #f7f7f7;
+  background: #f5f5f5;
   color: #444444;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom-color: rgba(0, 0, 0, 0.3);
-  background-origin: border-box;
-  /* 1 */
-
-  background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
-  background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+  border: 1px solid rgba(0, 0, 0, 0.06);
 }
 /*
  * Micro clearfix
@@ -2105,7 +2095,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-navbar-nav > li:hover > a,
 .uk-navbar-nav > li > a:focus,
 .uk-navbar-nav > li.uk-open > a {
-  background-color: transparent;
+  background-color: #fafafa;
   color: #444444;
   outline: none;
   /* 3 */
@@ -2119,15 +2109,13 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   border-left-color: rgba(0, 0, 0, 0.1);
   border-right-color: rgba(0, 0, 0, 0.1);
   border-top-color: rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 /* OnClick */.uk-navbar-nav > li > a:active {
-  background-color: #f5f5f5;
+  background-color: #eeeeee;
   color: #444444;
   border-left-color: rgba(0, 0, 0, 0.1);
   border-right-color: rgba(0, 0, 0, 0.1);
   border-top-color: rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 /* Active */
 .uk-navbar-nav > li.uk-active > a {
@@ -2135,8 +2123,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   color: #444444;
   border-left-color: rgba(0, 0, 0, 0.1);
   border-right-color: rgba(0, 0, 0, 0.1);
-  border-top-color: rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-top-color: rgba(0, 0, 0, 0.1);
 }
 /* Sub-objects: `uk-navbar-content`, `uk-navbar-brand`, `uk-navbar-toggle`
  ========================================================================== */
@@ -2350,16 +2337,16 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   outline: none;
   /* 2 */
 
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
 }
 /*
  * Active
  * `li` needed for higher specificity to override hover
  */
 .uk-subnav-pill > li.uk-active > a {
-  background: #009dd8;
+  background: #00a8e6;
   color: #ffffff;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
 }
 /* Hooks
  ========================================================================== */
@@ -2501,15 +2488,9 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
  * Links
  */
 .uk-pagination > li > a {
-  background: #f7f7f7;
+  background: #f5f5f5;
   color: #444444;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-bottom-color: rgba(0, 0, 0, 0.3);
-  background-origin: border-box;
-  /* 1 */
-
-  background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
-  background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   text-shadow: 0 1px 0 #ffffff;
 }
 /*
@@ -2526,31 +2507,21 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   outline: none;
   /* 2 */
 
-  background-image: none;
+  border-color: rgba(0, 0, 0, 0.16);
 }
 /* OnClick */
 .uk-pagination > li > a:active {
-  background-color: #f5f5f5;
+  background-color: #eeeeee;
   color: #444444;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-top-color: rgba(0, 0, 0, 0.3);
-  background-image: none;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 /*
  * Active
  */
 .uk-pagination > .uk-active > span {
-  background: #009dd8;
+  background: #00a8e6;
   color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-bottom-color: rgba(0, 0, 0, 0.4);
-  background-origin: border-box;
-  /* 1 */
-
-  background-image: -webkit-linear-gradient(top, #00b4f5, #008dc5);
-  background-image: linear-gradient(to bottom, #00b4f5, #008dc5);
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 /*
  * Disabled
@@ -2558,7 +2529,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-pagination > .uk-disabled > span {
   background-color: #fafafa;
   color: #999999;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   text-shadow: 0 1px 0 #ffffff;
 }
 /* Previous and next navigation
@@ -2651,8 +2622,8 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-tab > li.uk-open > a {
   /* 2 */
 
-  border-color: #dddddd;
-  background: #fafafa;
+  border-color: rgba(0, 0, 0, 0.06);
+  background: #f5f5f5;
   color: #005599;
   outline: none;
   /* 3 */
@@ -3400,6 +3371,8 @@ select.uk-form-width-mini {
  */
 .uk-button {
   display: inline-block;
+  /* 1 */
+
   min-height: 30px;
   /* 2 */
 
@@ -3407,7 +3380,7 @@ select.uk-form-width-mini {
   border: none;
   /* 3 */
 
-  background: #f7f7f7;
+  background: #f5f5f5;
   line-height: 28px;
   /* 4 */
 
@@ -3415,13 +3388,7 @@ select.uk-form-width-mini {
   letter-spacing: normal;
   /* 5 */
 
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-bottom-color: rgba(0, 0, 0, 0.3);
-  background-origin: border-box;
-  /* 1 */
-
-  background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
-  background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 4px;
   text-shadow: 0 1px 0 #ffffff;
 }
@@ -3446,17 +3413,13 @@ a.uk-button {
   outline: none;
   /* 2 */
 
-  background-image: none;
+  border-color: rgba(0, 0, 0, 0.16);
 }
 /* Active */
 .uk-button:active,
 .uk-button.uk-active {
-  background-color: #f5f5f5;
+  background-color: #eeeeee;
   color: #444444;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-top-color: rgba(0, 0, 0, 0.3);
-  background-image: none;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 /* Color modifiers
  ========================================================================== */
@@ -3464,88 +3427,58 @@ a.uk-button {
  * Modifier: `uk-button-primary`
  */
 .uk-button-primary {
-  background-color: #009dd8;
+  background-color: #00a8e6;
   color: #ffffff;
-  background-image: -webkit-linear-gradient(top, #00b4f5, #008dc5);
-  background-image: linear-gradient(to bottom, #00b4f5, #008dc5);
-  border-color: rgba(0, 0, 0, 0.2);
-  border-bottom-color: rgba(0, 0, 0, 0.4);
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
 /* Hover */
 .uk-button-primary:hover,
 .uk-button-primary:focus {
-  background-color: #00aff2;
+  background-color: #35b3ee;
   color: #ffffff;
-  background-image: none;
 }
 /* Active */
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
-  background-color: #008abf;
+  background-color: #0091ca;
   color: #ffffff;
-  background-image: none;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-top-color: rgba(0, 0, 0, 0.4);
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 /*
  * Modifier: `uk-button-success`
  */
 .uk-button-success {
-  background-color: #82bb42;
+  background-color: #8cc14c;
   color: #ffffff;
-  background-image: -webkit-linear-gradient(top, #9fd256, #6fac34);
-  background-image: linear-gradient(to bottom, #9fd256, #6fac34);
-  border-color: rgba(0, 0, 0, 0.2);
-  border-bottom-color: rgba(0, 0, 0, 0.4);
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
 /* Hover */
 .uk-button-success:hover,
 .uk-button-success:focus {
-  background-color: #8fce48;
+  background-color: #8ec73b;
   color: #ffffff;
-  background-image: none;
 }
 /* Active */
 .uk-button-success:active,
 .uk-button-success.uk-active {
-  background-color: #76b430;
+  background-color: #72ae41;
   color: #ffffff;
-  background-image: none;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-top-color: rgba(0, 0, 0, 0.4);
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 /*
  * Modifier: `uk-button-danger`
  */
 .uk-button-danger {
-  background-color: #d32c46;
+  background-color: #da314b;
   color: #ffffff;
-  background-image: -webkit-linear-gradient(top, #ee465a, #c11a39);
-  background-image: linear-gradient(to bottom, #ee465a, #c11a39);
-  border-color: rgba(0, 0, 0, 0.2);
-  border-bottom-color: rgba(0, 0, 0, 0.4);
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
 /* Hover */
 .uk-button-danger:hover,
 .uk-button-danger:focus {
-  background-color: #e33551;
+  background-color: #e4354f;
   color: #ffffff;
-  background-image: none;
 }
 /* Active */
 .uk-button-danger:active,
 .uk-button-danger.uk-active {
-  background-color: #c91c37;
+  background-color: #c91032;
   color: #ffffff;
-  background-image: none;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-top-color: rgba(0, 0, 0, 0.4);
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 /* Disabled state
  * Overrides also the color modifiers
@@ -3554,8 +3487,7 @@ a.uk-button {
 .uk-button:disabled {
   background-color: #fafafa;
   color: #999999;
-  border-color: rgba(0, 0, 0, 0.2);
-  background-image: none;
+  border-color: rgba(0, 0, 0, 0.06);
   box-shadow: none;
   text-shadow: 0 1px 0 #ffffff;
 }
@@ -3752,18 +3684,12 @@ a.uk-button {
   width: 35px;
   height: 35px;
   border-radius: 100%;
-  background: #f7f7f7;
+  background: #f5f5f5;
   line-height: 35px;
   color: #444444;
   font-size: 17.5px;
   text-align: center;
-  border: 1px solid #cccccc;
-  border-bottom-color: #bbbbbb;
-  background-origin: border-box;
-  /* 1 */
-
-  background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
-  background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+  border: 1px solid #e7e7e7;
   text-shadow: 0 1px 0 #ffffff;
 }
 /*
@@ -3781,16 +3707,12 @@ a.uk-button {
   outline: none;
   /* 2 */
 
-  background-image: none;
+  border-color: #d3d3d3;
 }
 /* Active */
 .uk-icon-button:active {
-  background-color: #f5f5f5;
+  background-color: #eeeeee;
   color: #444444;
-  border-color: #cccccc;
-  border-top-color: #bbbbbb;
-  background-image: none;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 /* Icon mapping
  ========================================================================== */
@@ -5000,7 +4922,7 @@ a.uk-close:hover {
 .uk-badge {
   display: inline-block;
   padding: 0 5px;
-  background: #009dd8;
+  background: #00a8e6;
   font-size: 10px;
   font-weight: bold;
   line-height: 14px;
@@ -5008,15 +4930,9 @@ a.uk-close:hover {
   text-align: center;
   vertical-align: middle;
   text-transform: none;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-bottom-color: rgba(0, 0, 0, 0.3);
-  background-origin: border-box;
-  /* 1 */
-
-  background-image: -webkit-linear-gradient(top, #00b4f5, #008dc5);
-  background-image: linear-gradient(to bottom, #00b4f5, #008dc5);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 2px;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 /* Modifier: `uk-badge-notification`;
  ========================================================================== */
@@ -5034,25 +4950,19 @@ a.uk-close:hover {
  * Modifier: `uk-badge-success`
  */
 .uk-badge-success {
-  background-color: #82bb42;
-  background-image: -webkit-linear-gradient(top, #9fd256, #6fac34);
-  background-image: linear-gradient(to bottom, #9fd256, #6fac34);
+  background-color: #8cc14c;
 }
 /*
  * Modifier: `uk-badge-warning`
  */
 .uk-badge-warning {
-  background-color: #f9a124;
-  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
-  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-color: #faa732;
 }
 /*
  * Modifier: `uk-badge-danger`
  */
 .uk-badge-danger {
-  background-color: #d32c46;
-  background-image: -webkit-linear-gradient(top, #ee465a, #c11a39);
-  background-image: linear-gradient(to bottom, #ee465a, #c11a39);
+  background-color: #da314b;
 }
 /* Hooks
  ========================================================================== */
@@ -5186,7 +5096,6 @@ a.uk-close:hover {
   border: 1px solid #dddddd;
   background: #ffffff;
   border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 /*
  * Hover state for `a` elements
@@ -5206,7 +5115,6 @@ a.uk-thumbnail:focus {
   outline: none;
   /* 3 */
 
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 /* Caption
  ========================================================================== */
@@ -5382,14 +5290,14 @@ a.uk-thumbnail:focus {
   box-sizing: border-box;
   height: 20px;
   margin-bottom: 15px;
-  background: #f7f7f7;
+  background: #f5f5f5;
   overflow: hidden;
   /* 1 */
 
   line-height: 20px;
   /* 2 */
 
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.07), inset 0 2px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
 }
 /*
@@ -5403,7 +5311,7 @@ a.uk-thumbnail:focus {
 .uk-progress-bar {
   width: 0;
   height: 100%;
-  background: #009dd8;
+  background: #00a8e6;
   float: left;
   /* Transition */
 
@@ -5414,10 +5322,8 @@ a.uk-thumbnail:focus {
   font-size: 12px;
   color: #ffffff;
   text-align: center;
-  background-image: -webkit-linear-gradient(top, #00b4f5, #008dc5);
-  background-image: linear-gradient(to bottom, #00b4f5, #008dc5);
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(0, 0, 0, 0.1);
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 /* Size modifiers
  ========================================================================== */
@@ -5432,19 +5338,13 @@ a.uk-thumbnail:focus {
 /* Color modifiers
  ========================================================================== */
 .uk-progress-success .uk-progress-bar {
-  background-color: #82bb42;
-  background-image: -webkit-linear-gradient(top, #9fd256, #6fac34);
-  background-image: linear-gradient(to bottom, #9fd256, #6fac34);
+  background-color: #8cc14c;
 }
 .uk-progress-warning .uk-progress-bar {
-  background-color: #f9a124;
-  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
-  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-color: #faa732;
 }
 .uk-progress-danger .uk-progress-bar {
-  background-color: #d32c46;
-  background-image: -webkit-linear-gradient(top, #ee465a, #c11a39);
-  background-image: linear-gradient(to bottom, #ee465a, #c11a39);
+  background-color: #da314b;
 }
 /* Modifier: `uk-progress-striped`
  ========================================================================== */
@@ -5681,9 +5581,8 @@ input.uk-search-field {
   /* 5 */
 
   letter-spacing: normal;
-  border: 1px solid #cbcbcb;
+  border: 1px solid #dddddd;
   border-radius: 4px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 /*
  * 1. Show dropdown
@@ -5832,9 +5731,8 @@ input.uk-search-field {
   background: #ffffff;
   color: #444444;
   left: -1px;
-  border: 1px solid #cbcbcb;
+  border: 1px solid #dddddd;
   border-radius: 4px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .uk-open > .uk-dropdown-navbar {
   -webkit-animation: uk-animation-slide-down 0.2s ease-in-out;
@@ -6902,10 +6800,7 @@ input.uk-search-field {
  ========================================================================== */
 /* Global variables
  ========================================================================== */
-/*
- * Backgrounds
- */
-/* Theme global variables
+/* Theme variables
  ========================================================================== */
 /*
  * Backgrounds
@@ -6914,10 +6809,7 @@ input.uk-search-field {
  * Borders
  */
 /*
- * Shadows
- */
-/*
- * Gradients
+ * Text shadows
  */
 /* Components variables
  ========================================================================== */
@@ -7014,9 +6906,6 @@ input.uk-search-field {
  * Alert
  */
 /*
- * Thumbnail
- */
-/*
  * Progress
  */
 /*
@@ -7108,8 +6997,8 @@ input.uk-search-field {
 /* Modifier `uk-nav-side`
  ========================================================================== */
 /*
- * Items
- */
+* Items
+*/
 /* Hover */
 /* Active */
 /*
@@ -7183,9 +7072,6 @@ input.uk-search-field {
  ========================================================================== */
 /* Component
  ========================================================================== */
-/*
- * 1. `background-origin` is needed to prevent the background-image gradients from repeating under the border
- */
 .uk-navbar:not(.uk-navbar-attached) {
   border-radius: 4px;
 }
@@ -7256,11 +7142,7 @@ input.uk-search-field {
 /* Items
  ========================================================================== */
 /*
- * 1. `background-origin` is needed to prevent the background-image gradients from repeating under the border
- */
-/*
  * Active
- * 1. `background-origin` is needed to prevent the background-image gradients from repeating under the border
  */
 /*
  * Disabled
@@ -7332,20 +7214,22 @@ input.uk-search-field {
  ========================================================================== */
 /* Component
  ========================================================================== */
-/*
- * 1.  `background-origin` is needed to prevent the background-image gradients from repeating under the border
- */
 /* Color modifiers
  ========================================================================== */
-/*
- * Modifier: `uk-button-primary`
- */
-/*
- * Modifier: `uk-button-success`
- */
-/*
- * Modifier: `uk-button-danger`
- */
+.uk-button-primary,
+.uk-button-success,
+.uk-button-danger {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+.uk-button-primary:hover,
+.uk-button-primary:focus,
+.uk-button-success:hover,
+.uk-button-success:focus,
+.uk-button-danger:hover,
+.uk-button-danger:focus {
+  border-color: rgba(0, 0, 0, 0.21);
+}
 /* Disabled state
  ========================================================================== */
 /* Modifier: `uk-button-link`
@@ -7359,15 +7243,19 @@ input.uk-search-field {
  */
 .uk-button-group > .uk-button:not(:first-child):not(:last-child),
 .uk-button-group > div:not(:first-child):not(:last-child) .uk-button {
+  border-left-color: rgba(0, 0, 0, 0.1);
+  border-right-color: rgba(0, 0, 0, 0.1);
   border-radius: 0;
 }
 .uk-button-group > .uk-button:first-child,
 .uk-button-group > div:first-child .uk-button {
+  border-right-color: rgba(0, 0, 0, 0.1);
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 .uk-button-group > .uk-button:last-child,
 .uk-button-group > div:last-child .uk-button {
+  border-left-color: rgba(0, 0, 0, 0.1);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -7384,6 +7272,7 @@ input.uk-search-field {
  * the active state will not work if you click the icon inside the button
  * Workaround: Just use a `button` or `input` element as button
  */
+.uk-button-group .uk-button:hover,
 .uk-button-group .uk-button:active {
   position: relative;
 }
@@ -7393,7 +7282,7 @@ input.uk-search-field {
  ========================================================================== */
 /* Component
  ========================================================================== */
-/* Modifier `uk-icon-button`
+/* Modifier: `uk-icon-button`
  ========================================================================== */
 /* Hover */
 /* Active */
@@ -7411,9 +7300,6 @@ input.uk-search-field {
  ========================================================================== */
 /* Component
  ========================================================================== */
-/*
- * 1. `background-origin` is needed to prevent the background-image gradients from repeating under the border
- */
 /*
  * Alert component
  *
@@ -7459,8 +7345,6 @@ input.uk-search-field {
 .uk-progress-small {
   border-radius: 500px;
 }
-/* Color modifiers
- ========================================================================== */
 /*
  * Search component
  *

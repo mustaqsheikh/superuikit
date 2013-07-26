@@ -1,4 +1,4 @@
-/*! UIkit 1.0.0 | http://www.getuikit.com | (c) 2013 YOOtheme | MIT License */
+/*! UIkit 1.0.1 | http://www.getuikit.com | (c) 2013 YOOtheme | MIT License */
 
 /* LESS related */
 /*
@@ -81,15 +81,6 @@
 /*
  * Icon
  */
- @font-face {
-	font-family: 'FontAwesome';
-	src: url("../fonts/fontawesome-webfont.eot");
-	src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), 
-		 url("../fonts/fontawesome-webfont.woff") format("woff"),
-		 url("../fonts/fontawesome-webfont.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-}
 /*
  * Close
  */
@@ -3063,7 +3054,9 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   background-color: #f5f5f5;
   color: #999999;
 }
-.uk-form textarea {
+.uk-form textarea,
+.uk-form select[multiple],
+.uk-form select[size] {
   height: auto;
 }
 /* 1 */
@@ -5874,8 +5867,8 @@ input.uk-search-field {
   position: fixed;
   /* 2 */
 
-  -webkit-transition: margin-left 0.3s ease-in-out, margin-right 0.3s ease-in-out;
-  transition: margin-left 0.3s ease-in-out, margin-right 0.3s ease-in-out;
+  -webkit-transition: margin-left 0.3s 0.05s ease-in-out, margin-right 0.3s 0.05s ease-in-out;
+  transition: margin-left 0.3s 0.05s ease-in-out, margin-right 0.3s 0.05s ease-in-out;
 }
 /* Sub-object `uk-offcanvas-bar`
  ========================================================================== */
