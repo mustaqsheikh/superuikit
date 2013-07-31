@@ -38,7 +38,7 @@ class plgSystemSuperuikit extends JPlugin
 
 	        case "flat":
 
-    	    $doc->addStylesheet('plugins/system/superuikit/assets/css/uikit.almostflat.min.css');
+    	    $doc->addStylesheet('plugins/system/superuikit/assets/css/uikit.almost-flat.min.css');
 
    		        break;
 
