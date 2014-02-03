@@ -5,6 +5,15 @@
  ========================================================================== */
 /* Base
  ========================================================================== */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), 
+     url("../fonts/fontawesome-webfont.woff") format("woff"),
+     url("../fonts/fontawesome-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /*
  * 1. Sets default font family to sans-serif.
  * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom.
