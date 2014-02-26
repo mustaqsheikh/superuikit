@@ -29,7 +29,7 @@ class plgSystemSuperuikit extends JPlugin
 			return;
 		}
 
-  		$doc = & JFactory :: getDocument();
+  		$doc = JFactory :: getDocument();
 
         // load template
         $suikit_theme  = $this->params->get('suikit_theme', '');
