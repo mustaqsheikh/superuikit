@@ -29,28 +29,55 @@ class plgSystemSuperuikit extends JPlugin
 			return;
 		}
 
-  		$doc = JFactory :: getDocument();
+  		$doc = & JFactory :: getDocument();
 
         // load template
         $suikit_theme  = $this->params->get('suikit_theme', '');
+        $addonscss = $this->params->get( 'addons', '' );
 
         switch ($suikit_theme) {
 
 	        case "flat":
 
+            if ($addonscss == 0) {
+
     	    $doc->addStylesheet('plugins/system/superuikit/assets/css/uikit.almost-flat.min.css');
 
-   		        break;
+            } else {
+
+            $doc->addStylesheet('plugins/system/superuikit/assets/css/uikit.almost-flat.min.css');
+            $doc->addStylesheet('plugins/system/superuikit/assets/css/addons/uikit.almost-flat.addons.min.css');
+
+            }
+   		    break;
 
 	        case "gradient":
 
-    	    $doc->addStylesheet('plugins/system/superuikit/assets/css/uikit.gradient.min.css');
+            if ($addonscss == 0) {
 
-   		        break;
+            $doc->addStylesheet('plugins/system/superuikit/assets/css/uikit.almost-flat.min.css');
+
+            } else {
+
+    	    $doc->addStylesheet('plugins/system/superuikit/assets/css/uikit.gradient.min.css');
+            $doc->addStylesheet('plugins/system/superuikit/assets/css/addons/uikit.gradient.addons.min.css');
+
+            }
+
+   		    break;
 
 	        default:
 
+            if ($addonscss == 0) {
+
+            $doc->addStylesheet('plugins/system/superuikit/assets/css/uikit.almost-flat.min.css');
+
+            } else {
+
             $doc->addStylesheet(JURI :: base(true) . '/plugins/system/superuikit/assets/css/uikit.min.css');
+            $doc->addStylesheet('plugins/system/superuikit/assets/css/addons/uikit.addons.min.css');
+
+            }
 
        }
 
@@ -58,8 +85,7 @@ class plgSystemSuperuikit extends JPlugin
 
 	function onAfterRender()
 	{
-
-		$stickydiv = $this->params->get( 'stickydiv', '' );
+		$addons = $this->params->get( 'addons', '' );
 
 		$app = JFactory::getApplication();
 
@@ -80,7 +106,17 @@ class plgSystemSuperuikit extends JPlugin
 
         $suikpath = (JURI :: root(true) . '/plugins/system/superuikit/assets/js/uikit.min.js');
 
-		$javascript = '<script src="'.$suikpath.'" type="text/javascript"></script>';
+        $addonspath = (JURI :: root(true) . '/plugins/system/superuikit/assets/js/addons/addons.js');
+
+        if ($addons == 1) {
+
+		$javascript = '<script src="'.$suikpath.'" type="text/javascript"></script><script src="'.$addonspath.'" type="text/javascript"></script>';
+
+        } else {
+
+        $javascript = '<script src="'.$suikpath.'" type="text/javascript"></script>';
+
+        }
 
         $buffer = preg_replace ("/<\/body>/", "".$javascript."\n\n</body>", $buffer);
 

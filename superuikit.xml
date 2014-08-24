@@ -5,7 +5,7 @@
   <creationDate>20th May 2012</creationDate>
   <authorEmail>no-reply@herdboy.com</authorEmail>
   <authorUrl>http://herdboy.com</authorUrl>
-  <version>3.0.4</version>
+  <version>3.0.5</version>
   <copyright>Copyright (c) 2012 HerdBoy Web Design and Development. All rights reserved.</copyright>
   <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
   <description>PLG_SYS_SUPERUIKIT_XML_DESC</description>
@@ -27,6 +27,10 @@
 		<option value="flat">PLG_SYS_SUPERUIKIT_FLAT</option>
 		<option value="gradient">PLG_SYS_SSUPERUIKIT_GRADIENT</option>
     </field>
+        <field	name="addons" type="radio" class="btn-group btn-group-yesno" default="0" description="Load UIkit Addons" label="Load UIkit Addons">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
 	</fieldset>
     </fields>
   </config>
