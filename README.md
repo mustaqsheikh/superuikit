@@ -1,6 +1,8 @@
 Super UIkit
 ==========
 
+[![Join the chat at https://gitter.im/mustaqsheikh/superuikit](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mustaqsheikh/superuikit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Super UI Kit is a Joomla Plugin Extension developed by HerdBoy Web Design and Development to integrate the Super Awesome UIkit into your website.
 
 This project is a work in progress. 
